@@ -1,0 +1,114 @@
+header {
+    #header-social {
+        background: $top-bottom-blue;
+
+        .header-social {
+            padding: 13px 0;
+
+            .header-social-icons {
+                i {
+                    margin-right: 1rem;
+                    font-size: $font-13;
+                    cursor: pointer;
+                    transition: $default-transition;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            .header-social-contact {
+                a {
+                    cursor: pointer;
+                    margin-left: 1.5rem;
+                    font-size: $font-15;
+
+                    i {
+                        font-size: $font-15;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    #header-navbar {
+        .custom-navbar {
+            nav {
+                .navbar-brand {
+                    img {}
+                }
+
+                #navbarSupportedContent {
+                    ul {
+                        .nav-item {
+                            font-size: $font-15;
+                            text-transform: uppercase;
+                            margin-left: 2px;
+                            position: relative;
+
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                width: 0%;
+                                height: 100%;
+                                background-color: $primary-color;
+                                transition: $default-transition;
+                            }
+
+                            &:hover::before {
+                                width: 100%;
+                            }
+
+                            .nav-link {
+                                color: black;
+                                padding: 50px 15px;
+                                position: relative;
+                                transition: $default-transition;
+
+                                &:hover {
+                                    color: white;
+                                }
+
+                                &:hover ul .nav-item::before {
+                                    width: 100%;
+                                }
+
+                                @media(max-width:1200px) {
+                                    & {
+                                        padding: 50px 2px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .fa-search {
+                            margin: 0 15px 0 30px;
+                            color: black;
+                            cursor: pointer;
+                        }
+
+                        .btn {
+                            background-color: $primary-color;
+                            padding: 8px 30px;
+                            font-size: 1rem;
+
+                            &:hover {
+                                background-color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.active-nav{
+    background-color: $primary-color;
+    color: #fff !important;
+}

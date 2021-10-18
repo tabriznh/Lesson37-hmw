@@ -1,0 +1,14 @@
+@mixin bg-props{
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin default-border {
+    border: 1px solid #eeeeee;
+}
+
+@mixin default-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

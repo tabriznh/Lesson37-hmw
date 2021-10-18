@@ -1,0 +1,23 @@
+@import "./partials/variables";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./partials/mixins";
+@import "./partials/header";
+@import "./partials/main";
+@import "./partials/footer";
+
+body{
+    font-family: 'Rubik', sans-serif;
+    height: 4500px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+
